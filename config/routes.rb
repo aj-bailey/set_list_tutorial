@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   get '/songs/:id', to: 'songs#show'
   get '/songs/show_me/:foo', to: 'songs#custom'
   get '/artists/:artist_id/songs', to: 'artist_songs#index'
+  get '/artists', to: 'artists#index'
+  get '/artists/new', to: 'artists#new'
+  post '/artists', to: 'artists#create'
+  
+  
 end
